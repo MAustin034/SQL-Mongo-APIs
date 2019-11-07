@@ -1,0 +1,23 @@
+!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+
+    <form action="/setdata" method="POST">
+      <input name="urlencoded" type="text"/>
+      <button type="submit">Submit</button>
+    </form>
+    <form action="/setdata" method="POST">
+      <input name="txtencoded" type="text"/>
+      <button type="submit">Submit</button>
+    </form>
+    
+
+  </body>
+</html>
